@@ -7,7 +7,7 @@ const ScanComponent = (props) => {
     <><div className={styles.container}>
       <button onClick={props.onClick} className={styles.logo}>
         <ScanSvg className={styles.svg} />
-        {props.children};
+        {props.children}
       </button>
       </div>
     </>
