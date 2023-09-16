@@ -1,0 +1,27 @@
+.video{
+    height: 78vh;
+    width: 100vw;
+    padding: 2rem 0rem;
+}
+.scanContainer{
+    display:flex;
+    
+}
+.homePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    
+}
+
+.scanContainer{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    bottom:0rem;
+    width: 100vw;
+    overflow: hidden;
+    background: linear-gradient(180deg, #376FDB -87.7%, rgba(0, 0, 0, 0.46) 100%);
+}
