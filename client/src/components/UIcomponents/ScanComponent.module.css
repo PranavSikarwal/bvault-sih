@@ -1,0 +1,15 @@
+.scanLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+  height: 61px;
+  top: 723px;
+  left: 162px;
+  border-radius: 34px;
+  border: 1px;
+  border: 1px solid #ffffff42;
+  background: linear-gradient(0deg, #100d2a, #100d2a),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.26));
+  box-shadow: 0px 0px 5px 2px #4286f3;
+}

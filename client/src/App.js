@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthContext } from "./hooks/useAuthContext"
 import { useAdminContext } from './hooks/useAdminContext'
-
+import './App.css'
 
 // pages & components
 import Home from './pages/Home'
@@ -10,6 +10,7 @@ import Signup from './pages/Signup'
 import Navbar from './components/Navbar/Navbar'
 import Certify from './pages/Certify'
 import Admin from './pages/Admin'
+import Qr from './pages/Qr'
 
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
             <Route 
               path="/"
               element={<Home/>}
+            />
+            <Route 
+              path="/scan"
+              element={<Qr/>}
             />
             {!user && (
               <Route 

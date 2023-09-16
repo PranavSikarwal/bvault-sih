@@ -27,12 +27,9 @@ const Navbar = (props) => {
       <div className={styles.container}>
         {count === 4 ? <Navigate to={`/admin`} /> : "" }
         <div onClick={updateCount} className={styles.logo}>
-          BVault
+          B-Vault
         </div>
-        <nav className={styles.nave}>
-          <Link to="/">
-            Scan
-          </Link>
+        <nav className={styles.nav}>
           {user && (
           <div>
             <span>{user.name}</span>
@@ -46,9 +43,9 @@ const Navbar = (props) => {
               <Link to="/admin">Institutions</Link>
             </div>
           ) : (
-            <div>
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link>
+            <div className={styles.auth}>
+              <Link to="/login" className={styles.login}>Login</Link>
+              <Link to="/signup" className={styles.signup}>Signup</Link>
             </div>
           ))}
         </nav>
